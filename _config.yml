@@ -1,346 +1,331 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
-# server process.
+# --------------
+# -- Settings --
+# --------------
 
-# Basic Site Settings
-locale                   : "en-US"
-title                    : "Sairam Geethanath / ICASSP 2025 Low-field MR image quality challenge"
-title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://low-field-mr-image-quality-challenge.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "low-field-mr-image-quality-challenge/low-field-mr-image-quality-challenge.github.io"
-github                   : [metadata]
-# Site Author - The following control what appear as part of the author content on the side bar.
-#               If a field is blank the icon and link will not appear, otherwise it will be shown.
-#               Additional customization can be done by editing /_includes/author-profile.html
-author:
-  # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+# Ignore this. This is only if you're hosting this in a sub-folder.
+# If you're using GitHub pages, they automatically override this with the right value.
+baseurl:             ""
 
-  # Academic websites
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-  impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
-  semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
-
-  # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
-  codepen          : # Username
-  dribbble         : # Username
-  github           : "academicpages"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
-
-  # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  google_plus      : # Username
-  keybase          : # Username
-  instagram        : # Username
-  lastfm           : # Username
-  linkedin         : # Username
-  mastodon         : # URL
-  medium           : # URL
-  pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
-  telegram         : # URL
-  tumblr           : # Username
-  twitter          : # Username for X / Twitter
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
-  youtube          : # Username
-  zhihu            : # URL
-
-# Publication Category - The following the list of publication categories and their headings
-publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
-
-# Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false #change to true to add link to talkmap on talks page
-comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus:
-    shortname            :
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
-  path                   : # blank (default) uses feed.xml
+# If you're using GitHub pages without a custom domain, this is "https://[github username].github.io"
+# If you're using GitHub pages with a custom domain, this is "http://[your domain]" (or https if you're using SSL)
+url:                 "https://createdhack.com/2018"
 
 
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
+full:                false
+# The ability to use custom themes.
+style:
+  theme:             "original"
 
+# This will help you track who's visiting your website.
+tracking:
+  google_analytics:  "UA-92880122-2"
 
-# Social Sharing
-twitter:
-  username               : &twitter
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 :  # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
+# Let people connect & engage with you through social media.
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  twitter_handle:    "CreatEDHack"
 
+# This is Search Engine Optimization. It'll help your website look better on search.
+seo:
+  title:             "CreatED | 7-8 April 2018"
+  description:       "24-hour hardware hackathon in Edinburgh"
+  image:             "https://createdhack.github.io/images/logo.png"
 
-# Analytics
-analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
-  google:
-    tracking_id          :
+organiser:
+  name:              "EaRS"
+  full_name:         "The University of Edinburgh Embedded and Robotics Society"
+  site:              "http://ears-edi.com/"
 
+# Event information.
+event:
+  name:              "CreatED 2018"
+  name_short:        "CreatED"
+  description:       "24-hour hardware hackathon"
+  date:              "7th & 8th of April"
+  location:          "Appleton Tower, The University of Edinburgh"
+  logosrc:           "images/logo.png"
+  logoalt:           "CreatED Logo"
 
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-  - files
+  trust_badge:
+    year:            "2018"  # season year
+    region:          "eu"    # "na" or "eu"
+    color:           "white" # "white", "black", "gray", "red", "blue" or "yellow"
+
+  social:
+    - logo:          "images/fb_logo.png"
+      text:          "Facebook event"
+      link:          "https://www.facebook.com/events/328878124288949/"
+    - logo:          "images/twitter_logo.png"
+      text:          "Twitter"
+      link:          "https://twitter.com/CreatEDHack"
+
+  hero:
+    my_mlh:
+      text:          "Register with MyMlh, too"
+      client_id:     "87fceece377ceb70f339e440591e889e918c1d421bd986ff7b58ca3ea9ee1d30"
+      redirect_uri:  "https://createdhack.github.io/success"
+
+    links:
+      - text:        "Sponsor"
+        href:        "mailto:cameron@ears-edi.com"
+
+  about:
+    description:     >
+      CreatED is a 24 hour hardware hackathon coming to Edinburgh this April.{::nomarkdown}<br />{:/}
+      It'll bring together students for a fun weekend of invention, hacking, and learning.{::nomarkdown}<br />{:/}
+      Brought to you by [The University of Edinburgh Embedded and Robotics Society](http://ears-edi.com/).
+
+  workshops:
+      - name: "Introduction to Electronics"
+        time: "12.00 - 13.00"
+        level: "No prior experience required."
+        description: "Do you want to learn the basics of building circuits? We will take you over the fundamentals of electronics concepts, explain how components such as resistors or transistors work and finally get you to build some circuits of your own!"
+      - name: "MiRo"
+        time: "12.00 - 13.00"
+        level: "Knowledge of programming and command line"
+        description: "Are you interested in working on a MiRo project during the hackathon? Come to this workshop which will give an introduction to MiRo, all of his sensors/actuators and explain the basics of how it works. You will learn how to use the simulator to introduce the basics of programming MiRos with ROS, and finally show how to port the programmed behaviours over to the real robot"
+      - name: "Introduction to micro:bit"
+        time: "14.00 - 15.00"
+        level: "Entry level, no prior experience required. If you have never programmed before it would be very beneficial for you to come."
+        description: "A workshop aimed at people with no previous programming experience. We will take you from complete basics to explain the fundamental concepts of programming and then show you how to apply them to hardware by making a simple game on a Microbit"
+      - name: "GitHub workshop"
+        time: "15.00 - 16.00"
+        level: "Entry level, no prior experience required."
+        description: "During this workshop delivered to you by GitHub you will learn the basics of version control. We will take you from the basics of Git all the way through to showcasing your projects on GitHub."
+      - name: "Line Follower"
+        time: "15.30 - 17.00"
+        level: "Basic knowledge of electronics, Arduino and programming programming"
+        description: "Build your own line follower robot using an Arduino. We will take you through the basics of motor control and sensor readings so that you can build your own line following robot and watch it go!"
+
+      - name: "Introduction to FPGA"
+        time: "17.00 - 18.00"
+        level: "Knowledge of Python strongly recommended"
+        description: "A beginner's intro to the world of FPGA programming! Come along to learn how to set up a PYNQ FPGA board and test out several simple projects in Jupyter Notebook"
+      - name: "Introduction to IoT"
+        time: "19.00 - 20.00"
+        level: "Basic knowledge of Python recommended."
+        description: "During this workshop we will dive into the world of IoT technologies. We will explain how the IoT systems work and take you through creating you own simple IoT application"
+
+  # Info Sections
+  sponsors:
+    # tier1 is top, anycont is bottom (refer to sponsorship packages)
+    tier2:
+      - logo:        "images/accenture_logo.png"
+        name:        "Accenture"
+        url:         "http://www.accenture.com"
+      - logo:        "images/nordic_logo.png"
+        name:        "Nordic"
+        url:         "http://www.nordicsemi.com/"
+      - logo:        "images/github_logo.png"
+        name:        "GitHub"
+        url:         "https://github.com"
+      - logo:        "images/queryclick_logo.svg"
+        name:        "QueryClick"
+        url:         "http://uk.queryclick.com/en/"
+      - logo:        "images/ecr_logo.jpg"
+        name:        "ECR"
+        url:         "https://www.edinburgh-robotics.org/"
+      - logo:        "images/consequentialrobotics_logo.png"
+        name:        "Consequential Robotics"
+        url:         "http://consequentialrobotics.com"
+    tier3:
+      - logo:        "images/codethink_logo.svg"
+        name:        "Codethink"
+        url:         "https://www.codethink.co.uk/"
+      - logo:        "images/mokanix_logo_small.png"
+        name:        "mokanix"
+        url:         "https://www.mokanix.io"
+      - logo:        "images/fdm_logo.png"
+        name:        "FDM Group"
+        url:         "https://www.fdmgroup.com/"
+      - logo:        "images/compsoc_logo.png"
+        name:        "Compsoc"
+        customstyle: "padding-top: 20%; margin-bottom: 10%;"
+        url:         "https://comp-soc.com/"
+      - logo:        "images/morgain_stanley_logo.svg"
+        name:        "Morgan Stanley"
+        url:         "https://www.morganstanley.com/"
+        customstyle: "padding-top: 2%;"
+      - logo:        "images/sicsa_logo.svg"
+        name:        "SISCA"
+        url:         "http://www.sicsa.ac.uk/"
+    anycont:
+      - logo:        "images/InformaticsUni_transparent.gif"
+        name:        "University of Edinburgh School of Informatics"
+        url:         "http://www.ed.ac.uk/informatics"
+      - logo:        "images/xilinx_logo.png"
+        name:        "Xilinx"
+        url:         "http://www.xilinx.com"
+      - logo:        "images/mouser_logo.jpg"
+        name:        "Mouser"
+        url:         "http://mouser.com/"
+      - logo:        "images/jetbrains_logo.png"
+        name:        "JetBrains"
+        url:         "https://www.jetbrains.com/"
+      - logo:        "images/unity_logo.png"
+        name:        "Unity"
+        url:         "http://unity3d.com/"
+      - logo:        "images/lime_logo.png"
+        name:        "Lime Microsystems"
+        url:         "http://www.limemicro.com/"
+      - logo:        "images/twilio_logo.svg"
+        name:        "Twilio"
+        url:         "https://www.twilio.com"
+
+  info:
+    sections:
+      - image:       "images/header1.png"
+        imagealt:    "Circuitry on a breadboard"
+        title:       "Hardware"
+        description: >
+         We are the only student-run hackathon in the UK with a focus on hardware! Hackers will be producing physical devices, not just software projects.
+      - image:       "images/header2.png"
+        imagealt:    "Mentor assiting workshop attendees"
+        title:       "Workshops"
+        description: >
+         We will also be running an exciting series of workshops in parallel to the main event. The list will be announced soon&trade; and you'll be able to sign up on the day. Watch this space!
+      - image:       "images/header3.png"
+        imagealt:    "Two mentors discussing information on a computer"
+        title:       "Mentors"
+        description: >
+          We have a team of elite mentors available on site. They will be there to guide you all throughout the event whether you are a beginner or a seasoned hacker!
+
+  # Frequently asked questions.
+  faq:
+    - question:      "What is a hackathon?"
+      answer:        >
+        A hackathon is an invention marathon. Students come together to build cool
+        software & hardware hacks over 24-48 hours. It's [very beginner friendly](https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl).
+    - question:      "How much does it cost?"
+      answer:        >
+        Nothing. Attending a hackathon is free.
+    - question:      "Do I need to be a student to attend?"
+      answer:        >
+        No. Anyone over the age of 18 can attend.
+    - question:      "I'm a complete beginner. Can I still come?"
+      answer:        >
+        Absolutely! We especially encourage people that are new in the field to come along as a hackathon is a great place to get started. [Drop us a message](mailto:cameron@ears-edi.com) if you have any concerns.
+    - question:      "Where is the event?"
+      answer:        >
+        The event is being hosted at [Appleton Tower, The University of Edinburgh](https://www.google.co.uk/maps/place/Appleton+Tower,+The+University+of+Edinburgh/@55.9443771,-3.1891978,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c78385c7685d:0x6f9d3da4d39209ee!8m2!3d55.9443771!4d-3.1870091?dcr=0).
+    - question:      "What hardware will be available to use?"
+      answer:        >
+        You'll get access to a selection of standard components, microcontrollers and sensors.
+        For more detail, check out our [equipment list](https://docs.google.com/spreadsheets/d/1eLp_IJti27BO-0y5Q0DZIzqE3m4JAhHwhD6LHUlhDWw/edit#gid=0 "CreatED available equipment spreadsheet"). If there is
+        anything specific that you really want to use, you are welcome to bring it along!
+    - question:      "How big are the teams?"
+      answer:        >
+        Teams are no bigger than 4 people.
+    - question:      "Do you offer travel reimbursement?"
+      answer:        >
+        We cannot reimburse you for your travel expenses.
+    - question:      "Is there a code of conduct?"
+      answer:        >
+        We will be using the MLH code of conduct and will be enforcing it very strongly. You can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
+    - question:      "How does judging work?"
+      answer:        >
+        There will be 3 main winning teams that will be selected by a panel of judges.
+        The judges will score hacks in a number of categories announced at the event.
+        There will also be additional prizes for winners of specific challenges at the event. These challenges will
+        involve meeting certain criteria specific to each one.
+    - question:      "Do I have to use hardware in my hack?"
+      answer:        >
+        Yes, although don't be scared if you've never used hardware before! We'll have a team of elite mentors on site that will be helping you every step of the way. There will also be introductory workshops for beginners. Your hack will probably also include a software component.
+    - question:      "Do I have to come with teammates?"
+      answer:        >
+        There is a team-forming session at the start of the first day so feel free to come along on your own or with friends.
+
+  schedule:
+    Saturday:
+      - text:        "Start of registration"
+        start:       "10:00"
+        track:       "main"
+      - text:        "Team forming session 1"
+        start:       "10:30"
+        end:         "11:00"
+        track:       "main"
+      - text:        "Opening ceremony"
+        start:       "11.00"
+        end:         "12:00"
+        track:       "main"
+      - text:        "Start hacking"
+        start:       "12:00"
+        track:       "main"
+      - text:        "Team forming session 2"
+        start:       "12:01"
+        end:         "12:30"
+        track:       "main"
+      - text:        "Introduction to electronics workshop"
+        start:       "12:00"
+        end:         "13:00"
+        track:       "ws"
+      - text:        "Introduction to MiRo workshop"
+        start:       "12.00"
+        end:         "13.00"
+        track:       "ws"
+      - text:        "Lunch"
+        start:       "13:00"
+        end:         "14:00"
+        track:       "main"
+      - text:        "Introduction to Microbit workshop"
+        start:       "14:00"
+        end:         "15:00"
+        track:       "ws"
+      - text:        "GitHub workshop"
+        start:       "15.00"
+        end:         "16.00"
+        track:       "ws"
+
+      - text:        "Line follower workshop"
+        start:       "15:30"
+        end:         "17.00"
+        track:       "ws"
+      - text:        "FPGA workshop"
+        start:       "17:00"
+        end:         "18:00"
+        track:       "ws"
+      - text:        "Dinner"
+        start:       "18:00"
+        end:         "19:00"
+        track:       "main"
+      - text:        "Introduction to IoT workshop"
+        start:       "19.00"
+        end:         "20.00"
+        track:       "ws"
+    Sunday:
+      - text:        "Midnight snack"
+        start:       "00:00"
+      - text:        "Breakfast"
+        start:       "08:00"
+        end:         "09:00"
+      - text:        "Submissions due"
+        start:       "12:00"
+      - text:        "Lunch"
+        start:       "12.00"
+        end:         "13.00"
+      - text:        "Demos"
+        start:       "13:30"
+        end:         "15:00"
+      - text:        "Closing ceremony"
+        start:       "15:30"
+        end:         "16:30"
+
+  # This is the message you'll receive once you've registered.
+  register:
+    message:         >
+      Thanks for signing up!
+      {::nomarkdown}<br />{:/}
+      You'll receive more information closer to the hackathon.
+
+# ----------------------------------------------------
+# -- Ignore this unless you know what you're doing. --
+# ----------------------------------------------------
+
+markdown:            kramdown
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .github
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - CHANGELOG
-  - Capfile
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json*
-  - Rakefile
-  - README
-  - tmp
-  - vendor
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-
-# These settings control the types of collections used by the template
-collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
-
-
-# These settings control how pages and collections are included in the site
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
-
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
-# Outputting
-permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Plugins
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-redirect-from
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+ - node_modules
+ - gulpfile.js
+ - Gemfile
+ - Gemfile.lock
+ - package.json
+ - README.md
+ - CNAME
