@@ -1,7 +1,5 @@
 source "https://rubygems.org"
-
-ruby "2.7.0"
-
+ruby "3.0.7"
 gem "jekyll"
 gem "jekyll-watch"
 gem "kramdown"
