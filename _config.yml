@@ -13,67 +13,65 @@ url:                 "https://low-field-mr-image-quality-challenge.github.io/"
 full:                false
 # The ability to use custom themes.
 style:
-  theme:             "original"
+  theme:         "Original" #   "CreateEDHack"
 
 # This will help you track who's visiting your website.
 tracking:
   google_analytics:  "UA-92880122-2"
 
 # Let people connect & engage with you through social media.
-social:
-  twitter_handle:    "CreatEDHack"
+# social:
+#   twitter_handle:    " "
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
-  title:             "CreatED | 7-8 April 2018"
-  description:       "24-hour hardware hackathon in Edinburgh"
-  image:             "https://createdhack.github.io/images/logo.png"
+  title:             "Low-field MR image quality challenge | ICASSP 2025"
+  description:       "Image denoising and super-resolution reconstruction of low-field MRI data"
+  # image:             " "
 
 organiser:
-  name:              "EaRS"
-  full_name:         "The University of Edinburgh Embedded and Robotics Society"
-  site:              "http://ears-edi.com/"
+  name:              "ICASSP"
+  full_name:         "International conference on acoustics, speech and signal processing"
+  site:              "https://2025.ieeeicassp.org/"
 
 # Event information.
 event:
-  name:              "CreatED 2018"
-  name_short:        "CreatED"
-  description:       "24-hour hardware hackathon"
-  date:              "7th & 8th of April"
-  location:          "Appleton Tower, The University of Edinburgh"
+  name:              "ICASSP 2025"
+  name_short:        "LF-MRI-challenge"
+  description:       "Low-field MRI Signal processing challenge"
+  date:              "9th April, 2025"
+  location:          "Hyderabad, India"
   logosrc:           "images/logo.png"
-  logoalt:           "CreatED Logo"
+  logoalt:           "Temp Logo"
 
   trust_badge:
-    year:            "2018"  # season year
-    region:          "eu"    # "na" or "eu"
+    year:            "2025"  # season year
+    region:          "na"    # "na" or "eu"
     color:           "white" # "white", "black", "gray", "red", "blue" or "yellow"
 
-  social:
-    - logo:          "images/fb_logo.png"
-      text:          "Facebook event"
-      link:          "https://www.facebook.com/events/328878124288949/"
-    - logo:          "images/twitter_logo.png"
-      text:          "Twitter"
-      link:          "https://twitter.com/CreatEDHack"
+  # social:         # TODO - bug here
+  #   - logo:          "images/fb_logo.png"
+  #     text:          "Facebook event"
+  #     link:          "https://www.facebook.com/events/328878124288949/"
+  #   - logo:          "images/twitter_logo.png"
+  #     text:          "Twitter"
+  #     link:          "https://twitter.com/CreatEDHack"
 
-  hero:
-    my_mlh:
-      text:          "Register with MyMlh, too"
-      client_id:     "87fceece377ceb70f339e440591e889e918c1d421bd986ff7b58ca3ea9ee1d30"
-      redirect_uri:  "https://createdhack.github.io/success"
+  # hero: # TODO
+  #   my_mlh:
+  #     text:          "Register with MyMlh, too"
+  #     client_id:     "87fceece377ceb70f339e440591e889e918c1d421bd986ff7b58ca3ea9ee1d30"
+  #     redirect_uri:  "https://createdhack.github.io/success"
 
-    links:
+    links:  # TODO
       - text:        "Sponsor"
         href:        "mailto:cameron@ears-edi.com"
 
-  about:
+  about:  
     description:     >
-      CreatED is a 24 hour hardware hackathon coming to Edinburgh this April.{::nomarkdown}<br />{:/}
-      It'll bring together students for a fun weekend of invention, hacking, and learning.{::nomarkdown}<br />{:/}
-      Brought to you by [The University of Edinburgh Embedded and Robotics Society](http://ears-edi.com/).
-
-  workshops:
+      The recent resurgence of portable, very low-field MRI systems to improve accessibility is constrained by image quality challenges compared to clinical scanners. The advent of machine learning methods provides a unique opportunity to address gaps in image resolution and signal-to-noise ratio (SNR). As very-low-field MRI gains the attention of the wider research community, this timely grand challenge invites participants from complementary backgrounds in signal processing, MRI analysis, machine learning, and related fields to break ground on this important topic of image quality. 
+      The challenge will start in September 2024 and last until June 2025. 
+    workshops:
       - name: "Introduction to Electronics"
         time: "12.00 - 13.00"
         level: "No prior experience required."
@@ -104,209 +102,212 @@ event:
         level: "Basic knowledge of Python recommended."
         description: "During this workshop we will dive into the world of IoT technologies. We will explain how the IoT systems work and take you through creating you own simple IoT application"
 
-  # Info Sections
-  sponsors:
-    # tier1 is top, anycont is bottom (refer to sponsorship packages)
-    tier2:
-      - logo:        "images/accenture_logo.png"
-        name:        "Accenture"
-        url:         "http://www.accenture.com"
-      - logo:        "images/nordic_logo.png"
-        name:        "Nordic"
-        url:         "http://www.nordicsemi.com/"
-      - logo:        "images/github_logo.png"
-        name:        "GitHub"
-        url:         "https://github.com"
-      - logo:        "images/queryclick_logo.svg"
-        name:        "QueryClick"
-        url:         "http://uk.queryclick.com/en/"
-      - logo:        "images/ecr_logo.jpg"
-        name:        "ECR"
-        url:         "https://www.edinburgh-robotics.org/"
-      - logo:        "images/consequentialrobotics_logo.png"
-        name:        "Consequential Robotics"
-        url:         "http://consequentialrobotics.com"
-    tier3:
-      - logo:        "images/codethink_logo.svg"
-        name:        "Codethink"
-        url:         "https://www.codethink.co.uk/"
-      - logo:        "images/mokanix_logo_small.png"
-        name:        "mokanix"
-        url:         "https://www.mokanix.io"
-      - logo:        "images/fdm_logo.png"
-        name:        "FDM Group"
-        url:         "https://www.fdmgroup.com/"
-      - logo:        "images/compsoc_logo.png"
-        name:        "Compsoc"
-        customstyle: "padding-top: 20%; margin-bottom: 10%;"
-        url:         "https://comp-soc.com/"
-      - logo:        "images/morgain_stanley_logo.svg"
-        name:        "Morgan Stanley"
-        url:         "https://www.morganstanley.com/"
-        customstyle: "padding-top: 2%;"
-      - logo:        "images/sicsa_logo.svg"
-        name:        "SISCA"
-        url:         "http://www.sicsa.ac.uk/"
-    anycont:
-      - logo:        "images/InformaticsUni_transparent.gif"
-        name:        "University of Edinburgh School of Informatics"
-        url:         "http://www.ed.ac.uk/informatics"
-      - logo:        "images/xilinx_logo.png"
-        name:        "Xilinx"
-        url:         "http://www.xilinx.com"
-      - logo:        "images/mouser_logo.jpg"
-        name:        "Mouser"
-        url:         "http://mouser.com/"
-      - logo:        "images/jetbrains_logo.png"
-        name:        "JetBrains"
-        url:         "https://www.jetbrains.com/"
-      - logo:        "images/unity_logo.png"
-        name:        "Unity"
-        url:         "http://unity3d.com/"
-      - logo:        "images/lime_logo.png"
-        name:        "Lime Microsystems"
-        url:         "http://www.limemicro.com/"
-      - logo:        "images/twilio_logo.svg"
-        name:        "Twilio"
-        url:         "https://www.twilio.com"
+  # Info Sections: TODO
+  # sponsors:
+  #   # tier1 is top, anycont is bottom (refer to sponsorship packages)
+  #   tier2:
+  #     - logo:        "images/accenture_logo.png"
+  #       name:        "Accenture"
+  #       url:         "http://www.accenture.com"
+  #     - logo:        "images/nordic_logo.png"
+  #       name:        "Nordic"
+  #       url:         "http://www.nordicsemi.com/"
+  #     - logo:        "images/github_logo.png"
+  #       name:        "GitHub"
+  #       url:         "https://github.com"
+  #     - logo:        "images/queryclick_logo.svg"
+  #       name:        "QueryClick"
+  #       url:         "http://uk.queryclick.com/en/"
+  #     - logo:        "images/ecr_logo.jpg"
+  #       name:        "ECR"
+  #       url:         "https://www.edinburgh-robotics.org/"
+  #     - logo:        "images/consequentialrobotics_logo.png"
+  #       name:        "Consequential Robotics"
+  #       url:         "http://consequentialrobotics.com"
+  #   tier3:
+  #     - logo:        "images/codethink_logo.svg"
+  #       name:        "Codethink"
+  #       url:         "https://www.codethink.co.uk/"
+  #     - logo:        "images/mokanix_logo_small.png"
+  #       name:        "mokanix"
+  #       url:         "https://www.mokanix.io"
+  #     - logo:        "images/fdm_logo.png"
+  #       name:        "FDM Group"
+  #       url:         "https://www.fdmgroup.com/"
+  #     - logo:        "images/compsoc_logo.png"
+  #       name:        "Compsoc"
+  #       customstyle: "padding-top: 20%; margin-bottom: 10%;"
+  #       url:         "https://comp-soc.com/"
+  #     - logo:        "images/morgain_stanley_logo.svg"
+  #       name:        "Morgan Stanley"
+  #       url:         "https://www.morganstanley.com/"
+  #       customstyle: "padding-top: 2%;"
+  #     - logo:        "images/sicsa_logo.svg"
+  #       name:        "SISCA"
+  #       url:         "http://www.sicsa.ac.uk/"
+  #   anycont:
+  #     - logo:        "images/InformaticsUni_transparent.gif"
+  #       name:        "University of Edinburgh School of Informatics"
+  #       url:         "http://www.ed.ac.uk/informatics"
+  #     - logo:        "images/xilinx_logo.png"
+  #       name:        "Xilinx"
+  #       url:         "http://www.xilinx.com"
+  #     - logo:        "images/mouser_logo.jpg"
+  #       name:        "Mouser"
+  #       url:         "http://mouser.com/"
+  #     - logo:        "images/jetbrains_logo.png"
+  #       name:        "JetBrains"
+  #       url:         "https://www.jetbrains.com/"
+  #     - logo:        "images/unity_logo.png"
+  #       name:        "Unity"
+  #       url:         "http://unity3d.com/"
+  #     - logo:        "images/lime_logo.png"
+  #       name:        "Lime Microsystems"
+  #       url:         "http://www.limemicro.com/"
+  #     - logo:        "images/twilio_logo.svg"
+  #       name:        "Twilio"
+  #       url:         "https://www.twilio.com"
 
   info:
     sections:
       - image:       "images/header1.png"
-        imagealt:    "Circuitry on a breadboard"
-        title:       "Hardware"
+        imagealt:    "Challenge_favicon"
+        title:       "Challenges"
         description: >
-         We are the only student-run hackathon in the UK with a focus on hardware! Hackers will be producing physical devices, not just software projects.
+         The challenge has two tracks: 1. Image denoising and 2. Super-resolution reconstruction.
+      
       - image:       "images/header2.png"
-        imagealt:    "Mentor assiting workshop attendees"
-        title:       "Workshops"
+        imagealt:    "Phantom low-field data"
+        title:       "Data"
         description: >
-         We will also be running an exciting series of workshops in parallel to the main event. The list will be announced soon&trade; and you'll be able to sign up on the day. Watch this space!
+         We have two data sets: 1. 47mT  phantom data and 2. 0.3T paired data!
+
       - image:       "images/header3.png"
-        imagealt:    "Two mentors discussing information on a computer"
+        imagealt:    "Mentor assisting attendees"
         title:       "Mentors"
         description: >
-          We have a team of elite mentors available on site. They will be there to guide you all throughout the event whether you are a beginner or a seasoned hacker!
+          We have a team of elite mentors available on site. 
+          They will guide attendees throughout the event whether you are a beginner or a seasoned engineer!
 
-  # Frequently asked questions.
-  faq:
-    - question:      "What is a hackathon?"
-      answer:        >
-        A hackathon is an invention marathon. Students come together to build cool
-        software & hardware hacks over 24-48 hours. It's [very beginner friendly](https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl).
-    - question:      "How much does it cost?"
-      answer:        >
-        Nothing. Attending a hackathon is free.
-    - question:      "Do I need to be a student to attend?"
-      answer:        >
-        No. Anyone over the age of 18 can attend.
-    - question:      "I'm a complete beginner. Can I still come?"
-      answer:        >
-        Absolutely! We especially encourage people that are new in the field to come along as a hackathon is a great place to get started. [Drop us a message](mailto:cameron@ears-edi.com) if you have any concerns.
-    - question:      "Where is the event?"
-      answer:        >
-        The event is being hosted at [Appleton Tower, The University of Edinburgh](https://www.google.co.uk/maps/place/Appleton+Tower,+The+University+of+Edinburgh/@55.9443771,-3.1891978,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c78385c7685d:0x6f9d3da4d39209ee!8m2!3d55.9443771!4d-3.1870091?dcr=0).
-    - question:      "What hardware will be available to use?"
-      answer:        >
-        You'll get access to a selection of standard components, microcontrollers and sensors.
-        For more detail, check out our [equipment list](https://docs.google.com/spreadsheets/d/1eLp_IJti27BO-0y5Q0DZIzqE3m4JAhHwhD6LHUlhDWw/edit#gid=0 "CreatED available equipment spreadsheet"). If there is
-        anything specific that you really want to use, you are welcome to bring it along!
-    - question:      "How big are the teams?"
-      answer:        >
-        Teams are no bigger than 4 people.
-    - question:      "Do you offer travel reimbursement?"
-      answer:        >
-        We cannot reimburse you for your travel expenses.
-    - question:      "Is there a code of conduct?"
-      answer:        >
-        We will be using the MLH code of conduct and will be enforcing it very strongly. You can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
-    - question:      "How does judging work?"
-      answer:        >
-        There will be 3 main winning teams that will be selected by a panel of judges.
-        The judges will score hacks in a number of categories announced at the event.
-        There will also be additional prizes for winners of specific challenges at the event. These challenges will
-        involve meeting certain criteria specific to each one.
-    - question:      "Do I have to use hardware in my hack?"
-      answer:        >
-        Yes, although don't be scared if you've never used hardware before! We'll have a team of elite mentors on site that will be helping you every step of the way. There will also be introductory workshops for beginners. Your hack will probably also include a software component.
-    - question:      "Do I have to come with teammates?"
-      answer:        >
-        There is a team-forming session at the start of the first day so feel free to come along on your own or with friends.
+  # # Frequently asked questions.
+  # faq:
+  #   - question:      "What is a hackathon?"
+  #     answer:        >
+  #       A hackathon is an invention marathon. Students come together to build cool
+  #       software & hardware hacks over 24-48 hours. It's [very beginner friendly](https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl).
+  #   - question:      "How much does it cost?"
+  #     answer:        >
+  #       Nothing. Attending a hackathon is free.
+  #   - question:      "Do I need to be a student to attend?"
+  #     answer:        >
+  #       No. Anyone over the age of 18 can attend.
+  #   - question:      "I'm a complete beginner. Can I still come?"
+  #     answer:        >
+  #       Absolutely! We especially encourage people that are new in the field to come along as a hackathon is a great place to get started. [Drop us a message](mailto:cameron@ears-edi.com) if you have any concerns.
+  #   - question:      "Where is the event?"
+  #     answer:        >
+  #       The event is being hosted at [Appleton Tower, The University of Edinburgh](https://www.google.co.uk/maps/place/Appleton+Tower,+The+University+of+Edinburgh/@55.9443771,-3.1891978,17z/data=!3m1!4b1!4m5!3m4!1s0x4887c78385c7685d:0x6f9d3da4d39209ee!8m2!3d55.9443771!4d-3.1870091?dcr=0).
+  #   - question:      "What hardware will be available to use?"
+  #     answer:        >
+  #       You'll get access to a selection of standard components, microcontrollers and sensors.
+  #       For more detail, check out our [equipment list](https://docs.google.com/spreadsheets/d/1eLp_IJti27BO-0y5Q0DZIzqE3m4JAhHwhD6LHUlhDWw/edit#gid=0 "CreatED available equipment spreadsheet"). If there is
+  #       anything specific that you really want to use, you are welcome to bring it along!
+  #   - question:      "How big are the teams?"
+  #     answer:        >
+  #       Teams are no bigger than 4 people.
+  #   - question:      "Do you offer travel reimbursement?"
+  #     answer:        >
+  #       We cannot reimburse you for your travel expenses.
+  #   - question:      "Is there a code of conduct?"
+  #     answer:        >
+  #       We will be using the MLH code of conduct and will be enforcing it very strongly. You can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
+  #   - question:      "How does judging work?"
+  #     answer:        >
+  #       There will be 3 main winning teams that will be selected by a panel of judges.
+  #       The judges will score hacks in a number of categories announced at the event.
+  #       There will also be additional prizes for winners of specific challenges at the event. These challenges will
+  #       involve meeting certain criteria specific to each one.
+  #   - question:      "Do I have to use hardware in my hack?"
+  #     answer:        >
+  #       Yes, although don't be scared if you've never used hardware before! We'll have a team of elite mentors on site that will be helping you every step of the way. There will also be introductory workshops for beginners. Your hack will probably also include a software component.
+  #   - question:      "Do I have to come with teammates?"
+  #     answer:        >
+  #       There is a team-forming session at the start of the first day so feel free to come along on your own or with friends.
 
-  schedule:
-    Saturday:
-      - text:        "Start of registration"
-        start:       "10:00"
-        track:       "main"
-      - text:        "Team forming session 1"
-        start:       "10:30"
-        end:         "11:00"
-        track:       "main"
-      - text:        "Opening ceremony"
-        start:       "11.00"
-        end:         "12:00"
-        track:       "main"
-      - text:        "Start hacking"
-        start:       "12:00"
-        track:       "main"
-      - text:        "Team forming session 2"
-        start:       "12:01"
-        end:         "12:30"
-        track:       "main"
-      - text:        "Introduction to electronics workshop"
-        start:       "12:00"
-        end:         "13:00"
-        track:       "ws"
-      - text:        "Introduction to MiRo workshop"
-        start:       "12.00"
-        end:         "13.00"
-        track:       "ws"
-      - text:        "Lunch"
-        start:       "13:00"
-        end:         "14:00"
-        track:       "main"
-      - text:        "Introduction to Microbit workshop"
-        start:       "14:00"
-        end:         "15:00"
-        track:       "ws"
-      - text:        "GitHub workshop"
-        start:       "15.00"
-        end:         "16.00"
-        track:       "ws"
+  # schedule: #TODO
+  #   Saturday:
+  #     - text:        "Start of registration"
+  #       start:       "10:00"
+  #       track:       "main"
+  #     - text:        "Team forming session 1"
+  #       start:       "10:30"
+  #       end:         "11:00"
+  #       track:       "main"
+  #     - text:        "Opening ceremony"
+  #       start:       "11.00"
+  #       end:         "12:00"
+  #       track:       "main"
+  #     - text:        "Start hacking"
+  #       start:       "12:00"
+  #       track:       "main"
+  #     - text:        "Team forming session 2"
+  #       start:       "12:01"
+  #       end:         "12:30"
+  #       track:       "main"
+  #     - text:        "Introduction to electronics workshop"
+  #       start:       "12:00"
+  #       end:         "13:00"
+  #       track:       "ws"
+  #     - text:        "Introduction to MiRo workshop"
+  #       start:       "12.00"
+  #       end:         "13.00"
+  #       track:       "ws"
+  #     - text:        "Lunch"
+  #       start:       "13:00"
+  #       end:         "14:00"
+  #       track:       "main"
+  #     - text:        "Introduction to Microbit workshop"
+  #       start:       "14:00"
+  #       end:         "15:00"
+  #       track:       "ws"
+  #     - text:        "GitHub workshop"
+  #       start:       "15.00"
+  #       end:         "16.00"
+  #       track:       "ws"
 
-      - text:        "Line follower workshop"
-        start:       "15:30"
-        end:         "17.00"
-        track:       "ws"
-      - text:        "FPGA workshop"
-        start:       "17:00"
-        end:         "18:00"
-        track:       "ws"
-      - text:        "Dinner"
-        start:       "18:00"
-        end:         "19:00"
-        track:       "main"
-      - text:        "Introduction to IoT workshop"
-        start:       "19.00"
-        end:         "20.00"
-        track:       "ws"
-    Sunday:
-      - text:        "Midnight snack"
-        start:       "00:00"
-      - text:        "Breakfast"
-        start:       "08:00"
-        end:         "09:00"
-      - text:        "Submissions due"
-        start:       "12:00"
-      - text:        "Lunch"
-        start:       "12.00"
-        end:         "13.00"
-      - text:        "Demos"
-        start:       "13:30"
-        end:         "15:00"
-      - text:        "Closing ceremony"
-        start:       "15:30"
-        end:         "16:30"
+  #     - text:        "Line follower workshop"
+  #       start:       "15:30"
+  #       end:         "17.00"
+  #       track:       "ws"
+  #     - text:        "FPGA workshop"
+  #       start:       "17:00"
+  #       end:         "18:00"
+  #       track:       "ws"
+  #     - text:        "Dinner"
+  #       start:       "18:00"
+  #       end:         "19:00"
+  #       track:       "main"
+  #     - text:        "Introduction to IoT workshop"
+  #       start:       "19.00"
+  #       end:         "20.00"
+  #       track:       "ws"
+  #   Sunday:
+  #     - text:        "Midnight snack"
+  #       start:       "00:00"
+  #     - text:        "Breakfast"
+  #       start:       "08:00"
+  #       end:         "09:00"
+  #     - text:        "Submissions due"
+  #       start:       "12:00"
+  #     - text:        "Lunch"
+  #       start:       "12.00"
+  #       end:         "13.00"
+  #     - text:        "Demos"
+  #       start:       "13:30"
+  #       end:         "15:00"
+  #     - text:        "Closing ceremony"
+  #       start:       "15:30"
+  #       end:         "16:30"
 
   # This is the message you'll receive once you've registered.
   register:
