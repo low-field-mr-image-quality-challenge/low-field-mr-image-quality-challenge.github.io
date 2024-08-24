@@ -174,8 +174,8 @@ event:
         imagealt:    "Challenge_favicon"
         title:       "Challenges"
         description: >
-         The challenge has two tracks: \n 
-         1. Image denoising and 2. Super-resolution reconstruction.
+         Two tracks: 
+         1. Image denoising 2. Super-resolution reconstruction.
       
       - image:       "images/header2.png"
         imagealt:    "Phantom low-field data"
