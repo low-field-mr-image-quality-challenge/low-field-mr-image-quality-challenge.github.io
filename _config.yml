@@ -39,7 +39,7 @@ event:
   name:              "ICASSP 2025 LF-MRI-challenge"
   name_short:        "LowMRI-qc"
   description:       "Low-field MRI Signal processing challenge"
-  date:              "6th - 11th April, 2025"
+  date:              "Sep. 2024 - Jun. 2025"
   location:          "Hyderabad, India"
   logosrc:           "images/logo.png"
   logoalt:           "Temp Logo"
