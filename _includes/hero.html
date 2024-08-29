@@ -17,16 +17,16 @@
     </div>
   </div>
   <div id="startchange" class="container about">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-justify">
       {{ site.event.about.description | markdownify }}
     </div>
   </div>
-  <div id="signupModal" class="modal fade">
+  <!-- <div id="signupModal" class="modal fade">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Eventbrite Registration</h4>
+          <h4 class="modal-title">Eventbrite Registration - external site</h4>
         </div>
         <div class="modal-body">
           <div id="eventbrite-widget-container-43719602508"></div>
@@ -40,8 +40,8 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="buttons">
+  </div> -->
+  <!-- <div class="buttons">
     <a href="#signupModal" data-toggle="modal">Sign-up</a>
 
     <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
@@ -66,5 +66,5 @@
     {% for link in site.event.hero.links %}
     <a href="{{ link.href }}">{{ link.text }}</a> {% endfor %}
 
-  </div>
+  </div> -->
 </section>

@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>ICASSP 2025</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Image denoising and super-resolution reconstruction of low-field MRI data">
+
+  <!-- Twitter Handle -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@">
+  <meta name="twitter:creator" content="@">
+  <meta name="twitter:title" content="Low-field MR image quality challenge | ICASSP 2025">
+  <meta name="twitter:description" content="Image denoising and super-resolution reconstruction of low-field MRI data"> 
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="ICASSP 2025">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000">
+  <meta property="og:title" content="Low-field MR image quality challenge | ICASSP 2025">
+  <meta property="og:description" content="Image denoising and super-resolution reconstruction of low-field MRI data"> 
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="./ICASSP 2025_files/css">
+  <link rel="stylesheet" type="text/css" href="./ICASSP 2025_files/font-awesome.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" href="./ICASSP 2025_files/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./ICASSP 2025_files/base.css">
+  <link rel="stylesheet" type="text/css" href="./ICASSP 2025_files/Original.css">
+
+  <!-- Favicon
+  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="icon" href="http://localhost:4000/images/favicon.ico"> -->
+
+  <!-- Form.io -->
+  <link rel="stylesheet" href="./ICASSP 2025_files/formio.full.min.css">
+  <script async="" src="./ICASSP 2025_files/analytics.js"></script><script src="./ICASSP 2025_files/formio.full.min.js"></script>
+  <script src="./ICASSP 2025_files/jquery.min.js"></script>
+  <script src="./ICASSP 2025_files/bootstrap.min.js"></script>
+
+  <script src="./ICASSP 2025_files/scroll-nav-color-change.js"></script>
+  <script src="./ICASSP 2025_files/smooth-scroll.js"></script>
+</head>
+
+
+<body id="bootstrap-overrides">
+  <nav class="navbar navbar-default navbar-fixed-top" style="background-color: rgb(40, 44, 52);">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="http://127.0.0.1:4000/#">LF-MRI-challenge</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-right">
+          <!-- <li class="hidden-xs"><a id="localhost-logo" href="http://localhost.mlh.io" class="navbar-right"><img src="images/white_localhost_logo.svg" alt="MLH Localhost Logo"></a></li> -->
+          <li><a href="http://127.0.0.1:4000/#challenge">CHALLENGE</a></li>
+          <li><a href="http://127.0.0.1:4000/#workshops">TIMELINE</a></li>
+          <li><a href="http://127.0.0.1:4000/#links">LINKS</a></li>
+          <li><a href="http://127.0.0.1:4000/#results">RESULTS</a></li>
+          <li><a href="http://127.0.0.1:4000/#people">PEOPLE</a></li>
+          <li><a href="http://127.0.0.1:4000/#faq">FAQ</a></li>
+          <li><a href="http://127.0.0.1:4000/#schedule">SCHEDULE</a></li>
+          <li><a href="http://127.0.0.1:4000/#venue">VENUE</a></li>
+          <li><a href="http://127.0.0.1:4000/#sponsors">SPONSORS</a></li>
+          <li class="visible-xs"><a id="localhost-logo" href="http://localhost.mlh.io/" class="navbar-right"><img src="./ICASSP 2025_files/white_localhost_logo.svg" alt="MLH Localhost Logo"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+ <section class="hero">
+  <div class="wrapper text-center">
+    <img class="logo" src="./ICASSP 2025_files/logo.png" alt="Temp Logo">
+    <div class="black-bg">
+      <h1 rel="title">ICASSP 2025</h1>
+      <h2 rel="description">Low-field MRI Signal processing challenge</h2>
+      <h2 style="font-weight: 600;" rel="location"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp;9th April, 2025</h2>
+      <h2 style="font-weight: 600;" rel="location"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>&nbsp;Hyderabad, India</h2>
+      <div class="social-icons">
+        
+      </div>
+      <br>
+    </div>
+  </div>
+  <div id="startchange" class="container about">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-justify">
+      <p>The recent resurgence of portable, very low-field MRI systems to improve accessibility is constrained by image quality challenges compared to clinical scanners. The advent of machine learning methods provides a unique opportunity to address gaps in image resolution and signal-to-noise ratio (SNR). As very-low-field MRI gains the attention of the wider research community, this timely grand challenge invites participants from complementary backgrounds in signal processing, MRI analysis, machine learning, and related fields to break ground on this important topic of image quality.  The challenge starts in Sep. 2024 and will last until Jun. 2025.</p>
+
+    </div>
+  </div>
+  <div id="signupModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Eventbrite Registration</h4>
+        </div>
+        <div class="modal-body">
+          <div id="eventbrite-widget-container-43719602508" style="height: 425px; transition: height 0.5s ease-in-out;"><iframe src="./ICASSP 2025_files/checkout-external.html" data-automation="checkout-widget-iframe-43719602508" allowtransparency="true" frameborder="0" scrolling="auto" width="100%" height="100%"></iframe></div>
+          <div class="hidden-until-eb-complete alert alert-info" roler="alert">
+            <p>Would you like to also register a MyMLH account?</p>
+            <p>
+              <a class="alert-link" id="mymlh-button" href="https://my.mlh.io/oauth/authorize?client_id=&amp;redirect_uri=&amp;response_type=token">Yes</a> &nbsp;or&nbsp;
+              <a class="alert-link" id="mymlh-button" href="http://localhost:4000/success">No</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="buttons">
+    <a href="http://127.0.0.1:4000/#signupModal" data-toggle="modal">Sign-up</a>
+
+    <script src="./ICASSP 2025_files/eb_widgets.js"></script>
+
+    <script type="text/javascript">
+      var exampleCallback = function() {
+        console.log('Order complete!');
+      };
+
+      window.EBWidgets.createWidget({
+        // Required
+        widgetType: 'checkout',
+        eventId: '43719602508',
+        iframeContainerId: 'eventbrite-widget-container-43719602508',
+
+        // Optional
+        iframeContainerHeight: 425, // Widget height in pixels. Defaults to a minimum of 425px if not provided
+        onOrderComplete: exampleCallback // Method called when an order has successfully completed
+      });
+    </script>
+
+    
+
+  </div>
+</section>
+
+
+<section class="hardwarehack">
+  <div class="container">
+    <h1 class="text-center">Overview</h1>
+    <div class="items row">
+      
+        <div class="col-xs-12 col-sm-4 text-center">
+          <div class="item">
+            <img class="special-image" src="./ICASSP 2025_files/header3.png" alt="Mentor assisting attendees">
+            <h1>Motivation</h1>
+            <hr>
+            <h2 class="special-image-desc">Two-thirds of the world does not have access to MRI. Low-field MRI improves accessibility but suffers from poor image quality
+</h2>
+          </div>
+        </div>
+      
+        <div class="col-xs-12 col-sm-4 text-center">
+          <div class="item">
+            <img class="special-image" src="./ICASSP 2025_files/header1.png" alt="Challenge_favicon">
+            <h1>Tracks</h1>
+            <hr>
+            <h2 class="special-image-desc">Track 1 focuses on low-field image denoising while Track 2 advances low-field Super resolution reconstruction.
+</h2>
+          </div>
+        </div>
+      
+        <div class="col-xs-12 col-sm-4 text-center">
+          <div class="item">
+            <img class="special-image" src="./ICASSP 2025_files/header2.png" alt="Phantom low-field data">
+            <h1>Data</h1>
+            <hr>
+            <h2 class="special-image-desc">3T paired data for phantom (47mT) and in vivo (0.3T)
+</h2>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+<section id="challenge" class="challenge">
+  <div class="container">
+    <h1 class="text-center">Challenge</h1>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <!-- <h2 class="text-center"></h2> -->
+              <hr>
+              <h4 class="text-justify"><b>General instructions - </b> Participants can choose to pursue either or both challenge tracks and demonstrate it on the datasets described below.  Each participant or team needs to host all source-code related to the challenge on a repository such as GitHub with an easy-to-use readme file containing instructions for installation and usage that enables reproducing their results. 
+</h4>
+              <!-- <p class="workshop-level"><b>Level:</b> </p> -->
+              <!-- <p class="workshop-description"><b>Description: </b></p> -->
+            </div>
+          </div>
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <!-- <h2 class="text-center"></h2> -->
+              <hr>
+              <h4 class="text-justify"><b>Track 1: Image denoising - </b> The denoising track will focus on developing, adapting, or integrating methods and algorithms that can increase the SNR by two-fold, i.e., reduce the noise by four times. While the use of deep learning algorithms has made significant progress in the denoising setting, the main challenge in the low-field setting is that algorithms lack multiple high-quality reference datasets that can be used to train these algorithms. Zero-shot, few-shot, transfer learning, and methods that do not require noiseless reference data may be better suited in this setting.  The computation of the signal-to-noise ratio will follow the methods used in Ref. [3]. 
+</h4>
+              <!-- <p class="workshop-level"><b>Level:</b> </p> -->
+              <!-- <p class="workshop-description"><b>Description: </b></p> -->
+            </div>
+          </div>
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <!-- <h2 class="text-center"></h2> -->
+              <hr>
+              <h4 class="text-justify"><b>Track 2: Super-resolution reconstruction - </b> Most MRI data used for segmentation and volumetry tasks are acquired at 1mm isotropic resolution. However, the low SNR at low fields often restricts the resolution to 1.5 x 1.5 x 5 mm3 to keep the scan time reasonable. While super-resolution reconstruction of natural images has advanced significantly, this lack of extensive high-quality low-field data makes this ill-posed problem a critical barrier to using portable MRIs for volumetric measurements, especially in the brain. The focus is to use ground truth data from phantoms and gold standard data from 3T acquisitions to train low-field super-resolution algorithms.  The challenge is to use available very-low-field data comprising single or multiple orthogonal acquisitions to reconstruct a 1mm isotropic image volume with less than 5% error compared to the ground truth phantom data based on the vendor measurements.  
+</h4>
+              <!-- <p class="workshop-level"><b>Level:</b> </p> -->
+              <!-- <p class="workshop-description"><b>Description: </b></p> -->
+            </div>
+          </div>
+          
+        </div>
+    </div>
+  </div>
+</section>
+
+<section id="workshops" class="workshops">
+  <div class="container">
+    <h1 class="text-center">Timeline</h1>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <!-- <h2 class="text-center">Release of Dev Test set, Training dataset</h2> -->
+              <hr>
+              <p class="workshop-time"><b>Sep. 7, 2024:</b> Release of Dev Test set, Training dataset</p>
+              <!-- <p class="workshop-level"><b>Level:</b> </p> -->
+              <!-- <p class="workshop-description"><b>Description: </b></p> -->
+            </div>
+          </div>
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <!-- <h2 class="text-center">Release of Blind Test set</h2> -->
+              <hr>
+              <p class="workshop-time"><b>Nov. 7, 2024:</b> Release of Blind Test set</p>
+              <!-- <p class="workshop-level"><b>Level:</b> </p> -->
+              <!-- <p class="workshop-description"><b>Description: </b></p> -->
+            </div>
+          </div>
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <!-- <h2 class="text-center">Results of final subjective evaluation on Enhanced Blind Test set</h2> -->
+              <hr>
+              <p class="workshop-time"><b>Nov. 23, 2024:</b> Results of final subjective evaluation on Enhanced Blind Test set</p>
+              <!-- <p class="workshop-level"><b>Level:</b> </p> -->
+              <!-- <p class="workshop-description"><b>Description: </b></p> -->
+            </div>
+          </div>
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <!-- <h2 class="text-center">Grand Challenge 2-page Papers Due (by invitation only)</h2> -->
+              <hr>
+              <p class="workshop-time"><b>Dec. 1, 2024:</b> Grand Challenge 2-page Papers Due (by invitation only)</p>
+              <!-- <p class="workshop-level"><b>Level:</b> </p> -->
+              <!-- <p class="workshop-description"><b>Description: </b></p> -->
+            </div>
+          </div>
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <!-- <h2 class="text-center">Grand Challenge 2-page Paper Acceptance Notification</h2> -->
+              <hr>
+              <p class="workshop-time"><b>Dec. 16, 2024:</b> Grand Challenge 2-page Paper Acceptance Notification</p>
+              <!-- <p class="workshop-level"><b>Level:</b> </p> -->
+              <!-- <p class="workshop-description"><b>Description: </b></p> -->
+            </div>
+          </div>
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <!-- <h2 class="text-center">Camera-ready Grand Challenge 2-page Papers Due</h2> -->
+              <hr>
+              <p class="workshop-time"><b>Dec. 23, 2024:</b> Camera-ready Grand Challenge 2-page Papers Due</p>
+              <!-- <p class="workshop-level"><b>Level:</b> </p> -->
+              <!-- <p class="workshop-description"><b>Description: </b></p> -->
+            </div>
+          </div>
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <!-- <h2 class="text-center">•	Grand Challenge OJ-SP Papers Due (by invitation only)</h2> -->
+              <hr>
+              <p class="workshop-time"><b>Jun.11, 2025:</b> •	Grand Challenge OJ-SP Papers Due (by invitation only)</p>
+              <!-- <p class="workshop-level"><b>Level:</b> </p> -->
+              <!-- <p class="workshop-description"><b>Description: </b></p> -->
+            </div>
+          </div>
+          
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="datalinks" class="datalinks">
+  <!-- <div class="container"></div>
+  <h1 class="text-center">Links</h1>
+  <div class="items row">
+    
+    <div class="col-xs-12 col-sm-offset-2 col-sm-8 text-center">
+      <h3 class="text-center">47mT phantom repeatability data</h3>
+      <div class="item">
+        <a href="https://data.mendeley.com/datasets/pysgjrmbnv/1"><img src="images/Halbach.png"  alt="47mT phantom repeatability data"/></a>
+      </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-offset-2 col-sm-8 text-center">
+      <h3 class="text-center">0.3T in vivo data</h3>
+      <div class="item">
+        <a href="https://data.mendeley.com/datasets/pysgjrmbnv/1"><img src="images/Hmagnet.png"  alt="0.3T in vivo data"/></a>
+      </div>
+    </div>
+    
+  </div> -->
+  <div class="container">
+    <h1 class="text-center">Links</h1>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <!-- <h2 class="text-center"></h2> -->
+              <hr>
+              <img class="special-image-datalink" src="./ICASSP 2025_files/Halbach.png" alt="47mT phantom repeatability data">
+              <a href="https://data.mendeley.com/datasets/pysgjrmbnv/1"><h2 class="text-center"> 47mT phantom repeatability data </h2></a>
+              <!-- <p class="workshop-time"><b>:</b> </p> -->
+              <!-- <p class="workshop-level"><b>Level:</b> </p> -->
+              <!-- <p class="workshop-description"><b>Description: </b></p> -->
+            </div>
+          </div>
+          
+          <div class="col-xs-12">
+            <div class="item">
+              <!-- <h2 class="text-center"></h2> -->
+              <hr>
+              <img class="special-image-datalink" src="./ICASSP 2025_files/Hmagnet.png" alt="0.3T in vivo data">
+              <a href="https://data.mendeley.com/datasets/pysgjrmbnv/1"><h2 class="text-center"> 0.3T in vivo data </h2></a>
+              <!-- <p class="workshop-time"><b>:</b> </p> -->
+              <!-- <p class="workshop-level"><b>Level:</b> </p> -->
+              <!-- <p class="workshop-description"><b>Description: </b></p> -->
+            </div>
+          </div>
+          
+        </div>
+    </div>
+  </div>
+</section>
+
+<section id="results" class="results">
+  <div class="container"></div>
+  <h1 class="text-center">Results</h1>
+</section>
+
+<section id="people" class="people">
+  <div class="container"></div>
+  <h1 class="text-center">People</h1>
+</section>
+
+
+<!-- <section id="schedule" class="schedule">
+  <h1 class="text-center">Schedule</h1>
+  <div class="container">
+    <div id="schedSaturday">
+      <div class="row">
+        <div class="col-sm-3">
+          <header>
+            <div>7</div>
+            <div>April</div>
+          </header>
+        </div>
+        <div class="col-sm-9">
+          <table class="table table-hover">
+            <tbody>
+              <tr><th></th><th>Main track</th><th></th><th>Workshops</th></tr>
+                 
+              <tr>
+                
+                <th>
+                  10:00
+                </th>
+                <td>
+                  Start of registration
+                </td>
+                 
+                <th></th>
+                <td></td>
+                 
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  10:30<br />|<br />11:00
+                </th>
+                <td>
+                  Team forming session 1
+                </td>
+                 
+                <th></th>
+                <td></td>
+                 
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  11.00<br />|<br />12:00
+                </th>
+                <td>
+                  Opening ceremony
+                </td>
+                 
+                <th></th>
+                <td></td>
+                 
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  12:00
+                </th>
+                <td>
+                  Start hacking
+                </td>
+                 
+                <th></th>
+                <td></td>
+                 
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  12:01<br />|<br />12:30
+                </th>
+                <td>
+                  Team forming session 2
+                </td>
+                 
+                <th></th>
+                <td></td>
+                 
+              </tr>
+                  
+              <tr>
+                
+                <th></th>
+                <td></td>
+                
+                <th>
+                  12:00<br />|<br />13:00
+                </th>
+                <td>
+                  Introduction to electronics workshop
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th></th>
+                <td></td>
+                
+                <th>
+                  12.00<br />|<br />13.00
+                </th>
+                <td>
+                  Introduction to MiRo workshop
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  13:00<br />|<br />14:00
+                </th>
+                <td>
+                  Lunch
+                </td>
+                 
+                <th></th>
+                <td></td>
+                 
+              </tr>
+                  
+              <tr>
+                
+                <th></th>
+                <td></td>
+                
+                <th>
+                  14:00<br />|<br />15:00
+                </th>
+                <td>
+                  Introduction to Microbit workshop
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th></th>
+                <td></td>
+                
+                <th>
+                  15.00<br />|<br />16.00
+                </th>
+                <td>
+                  GitHub workshop
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th></th>
+                <td></td>
+                
+                <th>
+                  15:30<br />|<br />17.00
+                </th>
+                <td>
+                  Line follower workshop
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th></th>
+                <td></td>
+                
+                <th>
+                  17:00<br />|<br />18:00
+                </th>
+                <td>
+                  FPGA workshop
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  18:00<br />|<br />19:00
+                </th>
+                <td>
+                  Dinner
+                </td>
+                 
+                <th></th>
+                <td></td>
+                 
+              </tr>
+                  
+              <tr>
+                
+                <th></th>
+                <td></td>
+                
+                <th>
+                  19.00<br />|<br />20.00
+                </th>
+                <td>
+                  Introduction to IoT workshop
+                </td>
+                
+              </tr>
+               
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div id="schedSunday">
+      <div class="row">
+        <div class="col-sm-3">
+          <header>
+            <div>8</div>
+            <div>April</div>
+          </header>
+        </div>
+        <div class="col-sm-9">
+          <table class="table table-hover">
+            <tbody>
+                 
+              <tr>
+                
+                <th>
+                  00:00
+                </th>
+                <td>
+                  Midnight snack
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  08:00<br />|<br />09:00
+                </th>
+                <td>
+                  Breakfast
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  12:00
+                </th>
+                <td>
+                  Submissions due
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  12.00<br />|<br />13.00
+                </th>
+                <td>
+                  Lunch
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  13:30<br />|<br />15:00
+                </th>
+                <td>
+                  Demos
+                </td>
+                
+              </tr>
+                  
+              <tr>
+                
+                <th>
+                  15:30<br />|<br />16:30
+                </th>
+                <td>
+                  Closing ceremony
+                </td>
+                
+              </tr>
+               
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section id="faq" class="faq">
+  <div class="container">
+    <h1 class="text-center">FAQ</h1>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="venue" class="venue">
+  <h1 class="text-center">Venue Details</h1>
+  <iframe src="./ICASSP 2025_files/embed.html" width="100%" height="450" frameborder="0" style="border:0; box-shadow: 0px 0px 50px #cfcfcf;" allowfullscreen=""></iframe>
+</section>
+
+
+<section id="sponsors" class="sponsors">
+  <div class="container">
+    <div class="items row">
+      <div class="col-xs-12 text-center">
+        <h1>This ICASSP low-field MRimage quality challenge is sponsored by</h1>
+        <hr>
+      </div>
+    </div>
+    <div class="items row">
+      
+    </div>
+    
+    <div class="items row">
+      
+    </div>
+    
+    <div class="items row">
+      
+    </div>
+    
+    <div class="items row anycont">
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <section class="footer">
+    <div class="container text-center">
+      <h1>ICASSP 2025</h1>
+      <!-- <h3>Background photo is <a href="https://flic.kr/p/qwfAwk">&ldquo;Edinburgh Castle and city&rdquo;</a> by <a href="https://flic.kr/ps/2WkKwL">john mcsporran</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></h3> -->
+      <h3> Based on template by <a href="https://github.com/nlaz">Niko Lazaris</a>.</h3>
+    </div>
+  </section>
+
+  <script src="./ICASSP 2025_files/jquery-1.11.3.js"></script>
+
+  
+  <!-- Google Analytics code -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-92880122-2', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+
+
+</body></html>

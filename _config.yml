@@ -36,10 +36,10 @@ organiser:
 
 # Event information.
 event:
-  name:              "ICASSP 2025"
-  name_short:        "LF-MRI-challenge"
+  name:              "ICASSP 2025 LF-MRI-challenge"
+  name_short:        "LowMRI-qc"
   description:       "Low-field MRI Signal processing challenge"
-  date:              "9th April, 2025"
+  date:              "6th - 11th April, 2025"
   location:          "Hyderabad, India"
   logosrc:           "images/logo.png"
   logoalt:           "Temp Logo"
@@ -70,45 +70,69 @@ event:
   about:  
     description:     >
       The recent resurgence of portable, very low-field MRI systems to improve accessibility is constrained by image quality challenges compared to clinical scanners. The advent of machine learning methods provides a unique opportunity to address gaps in image resolution and signal-to-noise ratio (SNR). As very-low-field MRI gains the attention of the wider research community, this timely grand challenge invites participants from complementary backgrounds in signal processing, MRI analysis, machine learning, and related fields to break ground on this important topic of image quality. 
-      The challenge will start in September 2024 and last until June 2025. 
-    workshops:
-      - name: "Introduction to Electronics"
-        time: "12.00 - 13.00"
-        level: "No prior experience required."
-        description: "Do you want to learn the basics of building circuits? We will take you over the fundamentals of electronics concepts, explain how components such as resistors or transistors work and finally get you to build some circuits of your own!"
-      - name: "MiRo"
-        time: "12.00 - 13.00"
-        level: "Knowledge of programming and command line"
-        description: "Are you interested in working on a MiRo project during the hackathon? Come to this workshop which will give an introduction to MiRo, all of his sensors/actuators and explain the basics of how it works. You will learn how to use the simulator to introduce the basics of programming MiRos with ROS, and finally show how to port the programmed behaviours over to the real robot"
-      - name: "Introduction to micro:bit"
-        time: "14.00 - 15.00"
-        level: "Entry level, no prior experience required. If you have never programmed before it would be very beneficial for you to come."
-        description: "A workshop aimed at people with no previous programming experience. We will take you from complete basics to explain the fundamental concepts of programming and then show you how to apply them to hardware by making a simple game on a Microbit"
-      - name: "GitHub workshop"
-        time: "15.00 - 16.00"
-        level: "Entry level, no prior experience required."
-        description: "During this workshop delivered to you by GitHub you will learn the basics of version control. We will take you from the basics of Git all the way through to showcasing your projects on GitHub."
-      - name: "Line Follower"
-        time: "15.30 - 17.00"
-        level: "Basic knowledge of electronics, Arduino and programming programming"
-        description: "Build your own line follower robot using an Arduino. We will take you through the basics of motor control and sensor readings so that you can build your own line following robot and watch it go!"
+      The challenge starts in Sep. 2024 and will last until Jun. 2025. 
+  workshops:
+      - name: "Release of Dev Test set, Training dataset"
+        time: "Sep. 7, 2024"
+        # level: "No prior experience required."
+        # description: "Do you want to learn the basics of building circuits? We will take you over the fundamentals of electronics concepts, explain how components such as resistors or transistors work and finally get you to build some circuits of your own!"
+      - name: "Release of Blind Test set"
+        time: "Nov. 7, 2024"
+        # level: "Knowledge of programming and command line"
+        # description: "Are you interested in working on a MiRo project during the hackathon? Come to this workshop which will give an introduction to MiRo, all of his sensors/actuators and explain the basics of how it works. You will learn how to use the simulator to introduce the basics of programming MiRos with ROS, and finally show how to port the programmed behaviours over to the real robot"
+      - name: "Results of final subjective evaluation on Enhanced Blind Test set"
+        time: "Nov. 23, 2024"
+        # level: "Entry level, no prior experience required. If you have never programmed before it would be very beneficial for you to come."
+        # description: "A workshop aimed at people with no previous programming experience. We will take you from complete basics to explain the fundamental concepts of programming and then show you how to apply them to hardware by making a simple game on a Microbit"
+      - name: "Grand Challenge 2-page Papers Due (by invitation only)"
+        time: "Dec. 1, 2024"
+        # level: "Entry level, no prior experience required."
+        # description: "During this workshop delivered to you by GitHub you will learn the basics of version control. We will take you from the basics of Git all the way through to showcasing your projects on GitHub."
+      - name: "Grand Challenge 2-page Paper Acceptance Notification"
+        time: "Dec. 16, 2024"
+        # level: "Basic knowledge of electronics, Arduino and programming programming"
+        # description: "Build your own line follower robot using an Arduino. We will take you through the basics of motor control and sensor readings so that you can build your own line following robot and watch it go!"
+      - name: "Camera-ready Grand Challenge 2-page Papers Due"
+        time: "Dec. 23, 2024"
+        # level: "Knowledge of Python strongly recommended"
+        # description: "A beginner's intro to the world of FPGA programming! Come along to learn how to set up a PYNQ FPGA board and test out several simple projects in Jupyter Notebook"
+      - name: "•	Grand Challenge OJ-SP Papers Due (by invitation only)"
+        time: "Jun.11, 2025"
+        # level: "Basic knowledge of Python recommended."
+        # description: "During this workshop we will dive into the world of IoT technologies. We will explain how the IoT systems work and take you through creating you own simple IoT application"
+  datalinks:
+      - logo:        "images/Halbach.png"
+        name:        "47mT phantom repeatability data"
+        url:         "https://data.mendeley.com/datasets/pysgjrmbnv/1"
+        url_pub:     "https://pubmed.ncbi.nlm.nih.gov/38840502/"
+        description: >
+          Details of the data can be found in this publication here
 
-      - name: "Introduction to FPGA"
-        time: "17.00 - 18.00"
-        level: "Knowledge of Python strongly recommended"
-        description: "A beginner's intro to the world of FPGA programming! Come along to learn how to set up a PYNQ FPGA board and test out several simple projects in Jupyter Notebook"
-      - name: "Introduction to IoT"
-        time: "19.00 - 20.00"
-        level: "Basic knowledge of Python recommended."
-        description: "During this workshop we will dive into the world of IoT technologies. We will explain how the IoT systems work and take you through creating you own simple IoT application"
+      - logo:        "images/Hmagnet.png"
+        name:        "0.3T in vivo data"
+        url:         "https://github.com/mylyu/M4Raw"
+        url_pub:     "https://www.nature.com/articles/s41597-023-02181-4"
+        description: >
+          Details of the data can be found in this publication here
+  organizers:
+      - name: Sairam Geethanath, Ph.D.
+        url: "https://scholar.google.com/citations?user=tTwRX30AAAAJ&hl=en&oi=ao"
+        image: "images/Geethanath_use.png"
 
+      - name: Mathews Jacob, Ph.D.
+        url: "https://scholar.google.com/citations?user=nsQNqnIAAAAJ&hl=en"
+        image: "images/mjacob_use.png"
+
+      - name: Hayit Greenspan, Ph.D.
+        url: "https://scholar.google.com/citations?hl=en&user=qgNwIbYAAAAJ"
+        image: "images/hayit_use.png"
   # Info Sections: TODO
   # sponsors:
   #   # tier1 is top, anycont is bottom (refer to sponsorship packages)
   #   tier2:
   #     - logo:        "images/accenture_logo.png"
-  #       name:        "Accenture"
-  #       url:         "http://www.accenture.com"
+  #       name:        "47mT phantom repeatability data "
+  #       url:         "https://data.mendeley.com/datasets/pysgjrmbnv/1"
   #     - logo:        "images/nordic_logo.png"
   #       name:        "Nordic"
   #       url:         "http://www.nordicsemi.com/"
@@ -170,33 +194,57 @@ event:
 
   info:
     sections:
+      - image:       "images/header3.png"
+        imagealt:    "Mentor assisting attendees"
+        title:       "Motivation"
+        description: >
+          Two-thirds of the world does not have access to MRI. Low-field MRI improves accessibility but suffers from poor image quality
+        disclaimer: "*Image generated using AI"
+          
+
       - image:       "images/header1.png"
         imagealt:    "Challenge_favicon"
-        title:       "Challenges"
+        
+        title:       "Tracks"
         description: >
-         Two tracks: 
-         1. Image denoising 2. Super-resolution reconstruction.
-      
+          Track 1 focuses on low-field image denoising while Track 2 advances low-field Super resolution reconstruction.
+        disclaimer: "*Image generated using AI"
+
       - image:       "images/header2.png"
         imagealt:    "Phantom low-field data"
         title:       "Data"
-        description: >
-         We have two data sets: 1. 47mT  phantom data and 2. 0.3T paired data!
+        description : >
+            3T paired data for phantom (47mT) and in vivo (0.3T)
+        disclaimer: "*Image generated using AI"
 
-      - image:       "images/header3.png"
-        imagealt:    "Mentor assisting attendees"
-        title:       "Mentors"
-        description: >
-          We have a team of elite mentors available on site. 
-          They will guide attendees throughout the event whether you are a beginner or a seasoned engineer!
+    challenges:
+      - image:       "images/header2.png"
+        imagealt:    "Phantom low-field data"
+        title:       "General instructions"
+        description : >
+              Participants can choose to pursue either or both challenge tracks and demonstrate it on the datasets described below. 
+              Each participant or team needs to host all source-code related to the challenge on a repository such as GitHub with an easy-to-use readme file containing instructions for installation and usage that enables reproducing their results. 
+              Participants are recommended to test their algorithms on both datasets.
+      - image:       "images/header2.png"
+        imagealt:    "Phantom low-field data"
+        title:       "Track 1: Image denoising"
+        description : >
+              The denoising track will focus on developing, adapting, or integrating methods and algorithms that can increase the SNR by two-fold, i.e., reduce the noise by four times. While the use of deep learning algorithms has made significant progress in the denoising setting, the main challenge in the low-field setting is that algorithms lack multiple high-quality reference datasets that can be used to train these algorithms. Zero-shot, few-shot, transfer learning, and methods that do not require noiseless reference data may be better suited in this setting. 
+              The computation of the signal-to-noise ratio will follow the methods used in Ref. [3]. 
+      - image:       "images/header2.png"
+        imagealt:    "Phantom low-field data"
+        title:       "Track 2: Super-resolution reconstruction"
+        description : >
+              Most MRI data used for segmentation and volumetry tasks are acquired at 1mm isotropic resolution. However, the low SNR at low fields often restricts the resolution to 1.5 x 1.5 x 5 mm3 to keep the scan time reasonable. While super-resolution reconstruction of natural images has advanced significantly, this lack of extensive high-quality low-field data makes this ill-posed problem a critical barrier to using portable MRIs for volumetric measurements, especially in the brain. The focus is to use ground truth data from phantoms and gold standard data from 3T acquisitions to train low-field super-resolution algorithms. 
+              The challenge is to use available very-low-field data comprising single or multiple orthogonal acquisitions to reconstruct a 1mm isotropic image volume with less than 5% error compared to the ground truth phantom data based on the vendor measurements.  
+ 
 
   # # Frequently asked questions.
-  # faq:
-  #   - question:      "What is a hackathon?"
-  #     answer:        >
-  #       A hackathon is an invention marathon. Students come together to build cool
-  #       software & hardware hacks over 24-48 hours. It's [very beginner friendly](https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl).
-  #   - question:      "How much does it cost?"
+  faq:
+    - question:      "What is the format for final presentations?"
+      answer:        >
+        To be announced shortly 
+  # - question:      "How much does it cost?"
   #     answer:        >
   #       Nothing. Attending a hackathon is free.
   #   - question:      "Do I need to be a student to attend?"
@@ -235,80 +283,80 @@ event:
   #     answer:        >
   #       There is a team-forming session at the start of the first day so feel free to come along on your own or with friends.
 
-  # schedule: #TODO
-  #   Saturday:
-  #     - text:        "Start of registration"
-  #       start:       "10:00"
-  #       track:       "main"
-  #     - text:        "Team forming session 1"
-  #       start:       "10:30"
-  #       end:         "11:00"
-  #       track:       "main"
-  #     - text:        "Opening ceremony"
-  #       start:       "11.00"
-  #       end:         "12:00"
-  #       track:       "main"
-  #     - text:        "Start hacking"
-  #       start:       "12:00"
-  #       track:       "main"
-  #     - text:        "Team forming session 2"
-  #       start:       "12:01"
-  #       end:         "12:30"
-  #       track:       "main"
-  #     - text:        "Introduction to electronics workshop"
-  #       start:       "12:00"
-  #       end:         "13:00"
-  #       track:       "ws"
-  #     - text:        "Introduction to MiRo workshop"
-  #       start:       "12.00"
-  #       end:         "13.00"
-  #       track:       "ws"
-  #     - text:        "Lunch"
-  #       start:       "13:00"
-  #       end:         "14:00"
-  #       track:       "main"
-  #     - text:        "Introduction to Microbit workshop"
-  #       start:       "14:00"
-  #       end:         "15:00"
-  #       track:       "ws"
-  #     - text:        "GitHub workshop"
-  #       start:       "15.00"
-  #       end:         "16.00"
-  #       track:       "ws"
+  schedule: #TODO
+    Saturday:
+      - text:        "Start of registration"
+        start:       "10:00"
+        track:       "main"
+      - text:        "Team forming session 1"
+        start:       "10:30"
+        end:         "11:00"
+        track:       "main"
+      - text:        "Opening ceremony"
+        start:       "11.00"
+        end:         "12:00"
+        track:       "main"
+      - text:        "Start hacking"
+        start:       "12:00"
+        track:       "main"
+      - text:        "Team forming session 2"
+        start:       "12:01"
+        end:         "12:30"
+        track:       "main"
+      - text:        "Introduction to electronics workshop"
+        start:       "12:00"
+        end:         "13:00"
+        track:       "ws"
+      - text:        "Introduction to MiRo workshop"
+        start:       "12.00"
+        end:         "13.00"
+        track:       "ws"
+      - text:        "Lunch"
+        start:       "13:00"
+        end:         "14:00"
+        track:       "main"
+      - text:        "Introduction to Microbit workshop"
+        start:       "14:00"
+        end:         "15:00"
+        track:       "ws"
+      - text:        "GitHub workshop"
+        start:       "15.00"
+        end:         "16.00"
+        track:       "ws"
 
-  #     - text:        "Line follower workshop"
-  #       start:       "15:30"
-  #       end:         "17.00"
-  #       track:       "ws"
-  #     - text:        "FPGA workshop"
-  #       start:       "17:00"
-  #       end:         "18:00"
-  #       track:       "ws"
-  #     - text:        "Dinner"
-  #       start:       "18:00"
-  #       end:         "19:00"
-  #       track:       "main"
-  #     - text:        "Introduction to IoT workshop"
-  #       start:       "19.00"
-  #       end:         "20.00"
-  #       track:       "ws"
-  #   Sunday:
-  #     - text:        "Midnight snack"
-  #       start:       "00:00"
-  #     - text:        "Breakfast"
-  #       start:       "08:00"
-  #       end:         "09:00"
-  #     - text:        "Submissions due"
-  #       start:       "12:00"
-  #     - text:        "Lunch"
-  #       start:       "12.00"
-  #       end:         "13.00"
-  #     - text:        "Demos"
-  #       start:       "13:30"
-  #       end:         "15:00"
-  #     - text:        "Closing ceremony"
-  #       start:       "15:30"
-  #       end:         "16:30"
+      - text:        "Line follower workshop"
+        start:       "15:30"
+        end:         "17.00"
+        track:       "ws"
+      - text:        "FPGA workshop"
+        start:       "17:00"
+        end:         "18:00"
+        track:       "ws"
+      - text:        "Dinner"
+        start:       "18:00"
+        end:         "19:00"
+        track:       "main"
+      - text:        "Introduction to IoT workshop"
+        start:       "19.00"
+        end:         "20.00"
+        track:       "ws"
+    Sunday:
+      - text:        "Midnight snack"
+        start:       "00:00"
+      - text:        "Breakfast"
+        start:       "08:00"
+        end:         "09:00"
+      - text:        "Submissions due"
+        start:       "12:00"
+      - text:        "Lunch"
+        start:       "12.00"
+        end:         "13.00"
+      - text:        "Demos"
+        start:       "13:30"
+        end:         "15:00"
+      - text:        "Closing ceremony"
+        start:       "15:30"
+        end:         "16:30"
 
   # This is the message you'll receive once you've registered.
   register:

@@ -5,7 +5,7 @@ layout: default
 
 <section class="hardwarehack">
   <div class="container">
-    <h1 class="text-center">Why attend?</h1>
+    <h1 class="text-center">Overview</h1>
     <div class="items row">
       {% for section in site.event.info.sections %}
         <div class="col-xs-12 col-sm-4 text-center">
@@ -13,7 +13,8 @@ layout: default
             <img class="special-image" src="{{ section.image }}" alt="{{ section.imagealt }}" />
             <h1>{{ section.title }}</h1>
             <hr>
-            <h2 class="special-image-desc">{{ section.description }}</h2>
+            <h2 class="special-image-desc">{{ section.description}}</h2>
+            <h6 class="text-center">{{ section.disclaimer}}</h6>
           </div>
         </div>
       {% endfor %}
@@ -21,19 +22,91 @@ layout: default
   </div>
 </section>
 
-<section id="faq" class="faq">
+<section id="challenge" class="challenge">
   <div class="container">
-    <h1 class="text-center">FAQ</h1>
-    <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-        {% for item in site.event.faq %}
-        <div class="question col-xs-12 col-sm-12">
-          <h2>{{ item.question }}</h2>
-          <hr>
-          <p>{{ item.answer | markdownify }}</p>
+    <h1 class="text-center">Challenge</h1>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          {% for challenge in site.event.info.challenges %}
+          <div class="col-xs-12">
+            <div class="item">
+              <!-- <h2 class="text-center">{{ workshop.name }}</h2> -->
+              <hr>
+              <h4 class="text-justify"><b>{{ challenge.title }} - </b> {{ challenge.description }}</h4>
+              <!-- <p class="workshop-level"><b>Level:</b> {{ workshop.level }}</p> -->
+              <!-- <p class="workshop-description"><b>Description: </b>{{ workshop.description }}</p> -->
+            </div>
+          </div>
+          {% endfor %}
         </div>
-        {% endfor %}
-      </div>
+    </div>
+  </div>
+</section>
+
+<section id="workshops" class="workshops">
+  <div class="container">
+    <h1 class="text-center">Timeline</h1>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          {% for workshop in site.event.workshops %}
+          <div class="col-xs-12">
+            <div class="item">
+              <!-- <h2 class="text-center">{{ workshop.name }}</h2> -->
+              <hr>
+              <p class="workshop-time"><b>{{ workshop.time }}:</b> {{ workshop.name }}</p>
+              <!-- <p class="workshop-level"><b>Level:</b> {{ workshop.level }}</p> -->
+              <!-- <p class="workshop-description"><b>Description: </b>{{ workshop.description }}</p> -->
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="datalinks" class="datalinks">
+  <div class="container">
+    <h1 class="text-center">Links</h1>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          {% for datalink in site.event.datalinks %}
+          <div class="col-xs-12">
+            <div class="item">
+              <!-- <h2 class="text-center">{{ workshop.name }}</h2> -->
+              <hr>
+              <img class="special-image-datalink" src="{{ datalink.logo }}" alt="{{ datalink.name }}" />
+              <a href="{{ datalink.url }}"><h3 class="text-center"> {{datalink.name}} </h3></a>
+              <!-- <p class="workshop-time"><b>{{ workshop.time }}:</b> {{ workshop.name }}</p> -->
+              <!-- <p class="workshop-level"><b>Level:</b> {{ workshop.level }}</p> -->
+              <a href="{{ datalink.url_pub }}"><h4 class="text-center"> Related journal publication </h4></a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+    </div>
+  </div>
+</section>
+
+<section id="results" class="results">
+  <div class="container"></div>
+  <h1 class="text-center">Results</h1>
+  <h2 class="text-center">Leaderboard coming soon!</h2>
+</section>
+
+<section id="organizers" class="organizers">
+  <div class="container">
+    <h1 class="text-center">Organizers</h1>
+    <div class="items row">
+      {% for organizer in site.event.organizers %}
+        <div class="col-xs-12 col-sm-4 text-center">
+          <div class="item">
+            <img class="special-image" src="{{ organizer.image }}" />
+            <a href="{{ organizer.url }}"><h4 class="text-center"> {{organizer.name}} </h4></a>
+            <hr>
+          </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -125,23 +198,19 @@ layout: default
   </div>
 </section> -->
 
-<section id="workshops" class="workshops">
+<section id="faq" class="faq">
   <div class="container">
-    <h1 class="text-center">Workshops</h1>
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-          {% for workshop in site.event.workshops %}
-          <div class="col-xs-12">
-            <div class="item">
-              <h2 class="text-center">{{ workshop.name }}</h2>
-              <hr>
-              <p class="workshop-time"><b>Time:</b> {{ workshop.time }}</p>
-              <p class="workshop-level"><b>Level:</b> {{ workshop.level }}</p>
-              <p class="workshop-description"><b>Description: </b>{{ workshop.description }}</p>
-            </div>
-          </div>
-          {% endfor %}
+    <h1 class="text-center">FAQ</h1>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        {% for item in site.event.faq %}
+        <div class="question col-xs-12 col-sm-12">
+          <h2>{{ item.question }}</h2>
+          <hr>
+          <p>{{ item.answer | markdownify }}</p>
         </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </section>
@@ -157,7 +226,7 @@ layout: default
   <div class="container">
     <div class="items row">
       <div class="col-xs-12 text-center">
-        <h1>CreatED 2018 is sponsored by</h1>
+        <!-- <h1>This ICASSP low-field MRimage quality challenge is sponsored by</h1> -->
         <hr />
       </div>
     </div>
@@ -203,3 +272,6 @@ layout: default
     </div>
   </div>
 </section>
+
+
+

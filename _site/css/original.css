@@ -229,6 +229,10 @@ section.about p {
 .info,
 .sponsors,
 .schedule,
+.challenge,
+.datalinks,
+.results,
+.organizers,
 .venue {
   background-color: #fff;
   /* margin-top: 15px; */
@@ -243,6 +247,14 @@ section.about p {
 
 .info .item h1,
 .sponsors .item h1 {
+  font-family: 'Montserrat';
+  font-size: 45px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.info .item h1,
+.datalinks .item h1 {
   font-family: 'Montserrat';
   font-size: 45px;
   font-weight: 700;
@@ -273,6 +285,10 @@ section.about p {
 .venue h1,
 .hardwarehack h1,
 .schedule h1,
+.challenge h1,
+.results h1,
+.datalinks h1,
+.organizers h1,
 .workshops h1 {
   font-family: 'Montserrat';
   font-weight: 700;
@@ -281,7 +297,8 @@ section.about p {
 
 .faq .question h2,
 .hardwarehack .question h2,
-.workshops h2 {
+.workshops h2,
+.challenges h2 {
   font-family: 'Montserrat';
   font-weight: 700;
   font-size: 24px;
@@ -395,6 +412,14 @@ section.about p {
 .special-image {
   width: 300px;
   padding: 20px;
+}
+
+.special-image-datalink {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  padding: 10px;
 }
 
 .sponsors .anycont img {
