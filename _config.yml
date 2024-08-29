@@ -224,7 +224,7 @@ event:
         description : >
               Participants can choose to pursue either or both challenge tracks and demonstrate it on the datasets described below. 
               Each participant or team needs to host all source-code related to the challenge on a repository such as GitHub with an easy-to-use readme file containing instructions for installation and usage that enables reproducing their results. 
-              Participants are recommended to test their algorithms on both datasets.
+              Participants are recommended to test their algorithms on both datasets. Top three teams for each track will be invited to present during the ICASSP conference.
       - image:       "images/header2.png"
         imagealt:    "Phantom low-field data"
         title:       "Track 1: Image denoising"
