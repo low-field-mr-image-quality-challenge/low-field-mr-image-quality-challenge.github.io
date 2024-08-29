@@ -13,7 +13,7 @@ url:                 "https://low-field-mr-image-quality-challenge.github.io/"
 full:                false
 # The ability to use custom themes.
 style:
-  theme:         "Original" #   "CreateEDHack"
+  theme:         "original" #   "CreateEDHack"
 
 # This will help you track who's visiting your website.
 tracking:
