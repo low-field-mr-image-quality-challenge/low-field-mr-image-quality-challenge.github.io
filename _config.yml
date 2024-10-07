@@ -106,6 +106,7 @@ event:
         name:        "47mT phantom repeatability data"
         url:         "https://data.mendeley.com/datasets/pysgjrmbnv/1"
         url_pub:     "https://pubmed.ncbi.nlm.nih.gov/38840502/"
+        url_data_read: https://github.com/low-field-mr-image-quality-challenge/low-field-mr-image-quality-challenge.github.io/tree/main/data_read_code
         description: >
           Details of the data can be found in this publication here
 
